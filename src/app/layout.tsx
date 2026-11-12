@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const viewport: Viewport = {
-  themeColor: "#000000",
-  colorScheme: "dark",
+  themeColor: "#ffffff",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
 };
@@ -117,10 +117,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased bg-black text-[#ededed] selection:bg-white/20 selection:text-white">
-        <div className="ambient-light-beam" />
-        <div className="fixed inset-0 pointer-events-none z-0 bg-linear-grid" />
-        <div className="relative z-10 flex flex-col min-h-screen">
+      <body className="antialiased bg-white text-neutral-900 selection:bg-neutral-900 selection:text-white">
+        <div className="flex flex-col min-h-screen">
           {children}
         </div>
       </body>

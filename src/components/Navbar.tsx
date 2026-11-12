@@ -2,20 +2,19 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, Menu, X, Sparkles } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-4 z-50 w-full px-4 sm:px-6">
-      <div className="max-w-5xl mx-auto rounded-full border border-white/[0.1] bg-black/75 backdrop-blur-2xl px-4 sm:px-6 h-14 flex items-center justify-between shadow-2xl shadow-black/80 transition-all">
-        
+    <header className="sticky top-0 z-50 w-full bg-white/85 backdrop-blur-md border-b border-neutral-100">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-7 h-7 rounded-lg bg-white/[0.07] border border-white/[0.15] flex items-center justify-center group-hover:border-white/40 transition-colors">
+          <div className="w-7 h-7 rounded-lg border border-neutral-200 bg-neutral-50 flex items-center justify-center group-hover:border-neutral-400 transition-colors">
             <svg
-              className="w-4 h-4 text-white"
+              className="w-4 h-4 text-neutral-900"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -24,62 +23,52 @@ export function Navbar() {
               strokeLinejoin="round"
             >
               <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
-              <circle cx="10" cy="13" r="1.5" fill="#ffffff" />
-              <circle cx="14" cy="11" r="1.5" fill="#a1a1aa" />
-              <circle cx="17" cy="15" r="1.5" fill="#71717a" />
             </svg>
           </div>
-          <span className="font-semibold text-sm tracking-tight text-white group-hover:text-neutral-200 transition-colors">
+          <span className="font-semibold text-sm tracking-tight text-neutral-900">
             Ecloudlab
-          </span>
-          <span className="hidden sm:inline-flex items-center text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-white/[0.06] border border-white/[0.1] text-neutral-400">
-            LAB.01
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-xs font-medium text-neutral-400">
-          <Link href="#projects" className="hover:text-white transition-colors">
-            The Lab
+        <nav className="hidden md:flex items-center gap-8 text-xs font-medium text-neutral-500">
+          <Link href="#projects" className="hover:text-neutral-900 transition-colors">
+            Projects
           </Link>
-          <Link href="#simulator" className="hover:text-white transition-colors">
-            Interactive Graph
+          <Link href="#philosophy" className="hover:text-neutral-900 transition-colors">
+            Principles
           </Link>
-          <Link href="#philosophy" className="hover:text-white transition-colors">
-            Architecture
-          </Link>
-          <Link href="#creator" className="hover:text-white transition-colors">
+          <Link href="#creator" className="hover:text-neutral-900 transition-colors">
             Founder
           </Link>
-          <Link href="#contact" className="hover:text-white transition-colors">
+          <Link href="#contact" className="hover:text-neutral-900 transition-colors">
             Contact
           </Link>
         </nav>
 
-        {/* Action CTAs */}
-        <div className="hidden sm:flex items-center gap-2.5">
+        {/* Action CTA */}
+        <div className="hidden sm:flex items-center gap-3">
           <a
             href="https://nexus-bank.ecloudlab.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full border border-white/[0.1] bg-white/[0.03] text-neutral-300 hover:bg-white/[0.08] hover:text-white transition-all"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium rounded-full border border-neutral-200 text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors"
           >
             <span>Nexus Bank</span>
             <ArrowUpRight className="w-3 h-3 text-neutral-400" />
           </a>
           <a
             href="mailto:ecloudlatam@gmail.com"
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-full bg-white text-black hover:bg-neutral-200 transition-all shadow-sm"
+            className="inline-flex items-center px-4 py-1.5 text-xs font-medium rounded-full bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
           >
-            <Sparkles className="w-3 h-3" />
-            <span>Inquire</span>
+            Inquire
           </a>
         </div>
 
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-1.5 text-neutral-400 hover:text-white focus:outline-none"
+          className="md:hidden p-1.5 text-neutral-600 hover:text-neutral-900 focus:outline-none"
           aria-label="Toggle navigation menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -88,57 +77,50 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileOpen && (
-        <div className="md:hidden mt-2 max-w-5xl mx-auto rounded-2xl border border-white/[0.1] bg-black/95 backdrop-blur-2xl p-5 flex flex-col gap-3 shadow-2xl">
+        <div className="md:hidden border-t border-neutral-100 bg-white px-4 py-5 flex flex-col gap-3">
           <Link
             href="#projects"
             onClick={() => setMobileOpen(false)}
-            className="text-sm font-medium text-neutral-300 hover:text-white py-1"
+            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            The Lab / Projects
-          </Link>
-          <Link
-            href="#simulator"
-            onClick={() => setMobileOpen(false)}
-            className="text-sm font-medium text-neutral-300 hover:text-white py-1"
-          >
-            Interactive Graph
+            Projects
           </Link>
           <Link
             href="#philosophy"
             onClick={() => setMobileOpen(false)}
-            className="text-sm font-medium text-neutral-300 hover:text-white py-1"
+            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            Architecture &amp; Principles
+            Principles
           </Link>
           <Link
             href="#creator"
             onClick={() => setMobileOpen(false)}
-            className="text-sm font-medium text-neutral-300 hover:text-white py-1"
+            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            Brian Pomaquero (Founder)
+            Founder
           </Link>
           <Link
             href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="text-sm font-medium text-neutral-300 hover:text-white py-1"
+            className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
             Contact
           </Link>
-          <div className="pt-2 border-t border-white/[0.08] flex flex-col gap-2">
+          <div className="pt-3 border-t border-neutral-100 flex flex-col gap-2">
             <a
               href="https://nexus-bank.ecloudlab.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 py-2 text-xs font-semibold rounded-lg border border-white/[0.12] bg-white/[0.04] text-neutral-200"
+              className="flex items-center justify-center gap-1.5 py-2 text-xs font-medium rounded-full border border-neutral-200 text-neutral-800"
             >
-              <span>Nexus Bank Live Agent</span>
+              <span>Nexus Bank</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
             <a
               href="mailto:ecloudlatam@gmail.com"
-              className="w-full text-center py-2 text-xs font-semibold rounded-lg bg-white text-black"
+              className="w-full text-center py-2 text-xs font-medium rounded-full bg-neutral-900 text-white"
             >
-              Contact Ecloudlab
+              Inquire
             </a>
           </div>
         </div>

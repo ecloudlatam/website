@@ -11,57 +11,57 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <header className="sticky top-4 z-50 w-full px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto rounded-full border border-white/[0.1] bg-black/75 backdrop-blur-2xl px-5 h-14 flex items-center justify-between">
-          <Link href="/" className="font-semibold text-sm tracking-tight text-white flex items-center gap-2">
-            <span>⚡</span> Ecloudlab
+      <header className="sticky top-0 z-50 w-full bg-white/85 backdrop-blur-md border-b border-neutral-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+          <Link href="/" className="font-semibold text-sm tracking-tight text-neutral-900">
+            Ecloudlab
           </Link>
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-neutral-400 hover:text-white transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-neutral-500 hover:text-neutral-900 transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span>Back to Lab</span>
+            <span>Back to Home</span>
           </Link>
         </div>
       </header>
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-1">
-        <div className="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2">
+        <div className="text-xs font-mono uppercase tracking-widest text-neutral-400 mb-2">
           Terms &amp; Conditions
         </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-2">
+        <h1 className="text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight mb-2">
           Terms of Service
         </h1>
-        <div className="text-xs font-mono text-neutral-500 pb-8 mb-8 border-b border-white/[0.08]">
+        <div className="text-xs font-mono text-neutral-400 pb-8 mb-8 border-b border-neutral-100">
           Effective Date: November 2026 · Version 1.2
         </div>
 
-        <div className="rounded-3xl border border-white/[0.08] bg-[#080808] p-8 sm:p-12 space-y-8 text-neutral-300 text-sm sm:text-base leading-relaxed">
+        <div className="rounded-2xl border border-neutral-200 bg-white p-8 sm:p-10 space-y-8 text-neutral-600 text-sm sm:text-base leading-relaxed">
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">
+            <h2 className="text-lg font-semibold text-neutral-900 mb-3">
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing or utilizing any software, experimental prototypes, demonstration interfaces, or APIs developed by <strong>Ecloudlab</strong>, founded by Brian Pomaquero, you agree to be bound by these Terms of Service.
+              By accessing or utilizing any software, experimental prototypes, demonstration interfaces, or APIs developed by <strong className="text-neutral-900">Ecloudlab</strong>, founded by Brian Pomaquero, you agree to be bound by these Terms of Service.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">
+            <h2 className="text-lg font-semibold text-neutral-900 mb-3">
               2. Experimental Nature of AI Systems
             </h2>
             <p className="mb-3">
               Ecloudlab is an experimental software laboratory. Unless explicitly covered under a signed enterprise Service Level Agreement (SLA):
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-neutral-400">
+            <ul className="list-disc pl-6 space-y-2 text-neutral-500">
               <li>Prototypes are provided on an &ldquo;as-is&rdquo; and &ldquo;as-available&rdquo; basis.</li>
               <li>Generative AI outputs and autonomous decisions may occasionally reflect probabilistic variations. Users must verify mission-critical data independently.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">
+            <h2 className="text-lg font-semibold text-neutral-900 mb-3">
               3. Acceptable Use
             </h2>
             <p>
@@ -70,24 +70,24 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">
+            <h2 className="text-lg font-semibold text-neutral-900 mb-3">
               4. Contact &amp; Licensing
             </h2>
             <p>
               For enterprise partnerships, custom agent systems, or licensing, please contact:
             </p>
-            <p className="mt-2 text-neutral-300">
-              <strong>Email:</strong>{" "}
-              <a href="mailto:ecloudlatam@gmail.com" className="text-white underline underline-offset-4">
+            <p className="mt-2 text-neutral-600">
+              <strong className="text-neutral-900">Email:</strong>{" "}
+              <a href="mailto:ecloudlatam@gmail.com" className="text-neutral-900 underline underline-offset-4">
                 ecloudlatam@gmail.com
               </a>
               <br />
-              <strong>Portfolio:</strong>{" "}
+              <strong className="text-neutral-900">Portfolio:</strong>{" "}
               <a
                 href="https://www.brianpomaquero.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white underline underline-offset-4"
+                className="text-neutral-900 underline underline-offset-4"
               >
                 brianpomaquero.com
               </a>
