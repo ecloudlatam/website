@@ -33,16 +33,16 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-xs font-medium text-neutral-500">
           <Link href="#projects" className="hover:text-neutral-900 transition-colors">
-            Projects
+            Proyectos
           </Link>
           <Link href="#philosophy" className="hover:text-neutral-900 transition-colors">
-            Principles
+            Principios
           </Link>
           <Link href="#creator" className="hover:text-neutral-900 transition-colors">
-            Founder
+            Fundador
           </Link>
           <Link href="#contact" className="hover:text-neutral-900 transition-colors">
-            Contact
+            Contacto
           </Link>
         </nav>
 
@@ -61,7 +61,7 @@ export function Navbar() {
             href="mailto:ecloudlatam@gmail.com"
             className="inline-flex items-center px-4 py-1.5 text-xs font-medium rounded-full bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
           >
-            Inquire
+            Cotizar
           </a>
         </div>
 
@@ -69,7 +69,7 @@ export function Navbar() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden p-1.5 text-neutral-600 hover:text-neutral-900 focus:outline-none"
-          aria-label="Toggle navigation menu"
+          aria-label="Abrir menú de navegación"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -83,28 +83,28 @@ export function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            Projects
+            Proyectos
           </Link>
           <Link
             href="#philosophy"
             onClick={() => setMobileOpen(false)}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            Principles
+            Principios
           </Link>
           <Link
             href="#creator"
             onClick={() => setMobileOpen(false)}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            Founder
+            Fundador
           </Link>
           <Link
             href="#contact"
             onClick={() => setMobileOpen(false)}
             className="text-sm font-medium text-neutral-600 hover:text-neutral-900 py-1"
           >
-            Contact
+            Contacto
           </Link>
           <div className="pt-3 border-t border-neutral-100 flex flex-col gap-2">
             <a
@@ -120,7 +120,7 @@ export function Navbar() {
               href="mailto:ecloudlatam@gmail.com"
               className="w-full text-center py-2 text-xs font-medium rounded-full bg-neutral-900 text-white"
             >
-              Inquire
+              Cotizar
             </a>
           </div>
         </div>

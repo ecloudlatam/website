@@ -5,27 +5,27 @@ export function PhilosophyStack() {
   const pillars = [
     {
       icon: GitBranch,
-      title: "Stateful Graph Orchestration",
+      title: "Orquestación con Estado",
       description:
-        "Cyclic, state-aware agent loops powered by LangGraph ensure continuous verification, checkpointing, and self-correction.",
+        "Flujos cíclicos y conscientes del estado con LangGraph que garantizan verificación continua, puntos de control y autocorrección.",
     },
     {
       icon: CloudLightning,
-      title: "Serverless & Event-Driven",
+      title: "Serverless y Eventos",
       description:
-        "Decoupled cloud architecture utilizing Pub/Sub and serverless compute to handle fluctuating traffic without idle costs.",
+        "Arquitectura desacoplada en la nube con Pub/Sub y cómputo serverless para escalar ante picos de tráfico sin costos ociosos.",
     },
     {
       icon: ShieldCheck,
-      title: "Privacy & Data Isolation",
+      title: "Privacidad y Aislamiento",
       description:
-        "Strict multi-tenant isolation, row-level security policies, and zero persistent training leakage across boundaries.",
+        "Aislamiento estricto multi-tenant, políticas de seguridad a nivel de fila y cero filtración de datos entre entornos.",
     },
     {
       icon: Cpu,
-      title: "Auditable Guardrails",
+      title: "Controles Auditables",
       description:
-        "Deterministic tool validations, human-in-the-loop nodes, and full telemetry tracing before critical actions execute.",
+        "Validaciones deterministas de herramientas, nodos con supervisión humana y trazabilidad completa antes de ejecutar acciones críticas.",
     },
   ];
 
@@ -48,13 +48,13 @@ export function PhilosophyStack() {
         {/* Section Header */}
         <div className="mb-12">
           <div className="text-xs font-mono uppercase tracking-widest text-neutral-400 mb-2">
-            Principles
+            Principios
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mb-3">
-            Built for Autonomous Intelligence
+            Ingeniería para Software e IA
           </h2>
           <p className="text-sm sm:text-base text-neutral-500 max-w-xl">
-            Practical, secure, serverless, and privacy-first AI engineering.
+            Desarrollo práctico, seguro, serverless y con privacidad desde el diseño.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export function PhilosophyStack() {
         {/* Minimal Stack Row */}
         <div className="flex flex-wrap items-center gap-2 pt-4">
           <span className="text-xs font-mono uppercase tracking-wider text-neutral-400 mr-2">
-            Core Stack:
+            Stack Principal:
           </span>
           {technologies.map((tech) => (
             <span

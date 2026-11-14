@@ -9,17 +9,17 @@ export function Hero() {
         {/* Minimal Status Pill */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-gray-50 text-neutral-600 text-xs font-medium mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-          <span>AI Innovation &amp; Experimental Software Lab</span>
+          <span>Desarrollo de Software a Medida e IA</span>
         </div>
 
         {/* Clean Minimalist Heading */}
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-neutral-900 mb-6 leading-[1.1]">
-          Autonomous AI Agents.
+          Soluciones de Software e IA Autónoma.
         </h1>
 
         {/* Concise Subtitle */}
         <p className="text-base sm:text-lg text-neutral-500 max-w-xl mx-auto mb-10 leading-relaxed">
-          We research, design, and deploy autonomous AI agents and resilient software systems solving real-world problems.
+          Diseñamos y desarrollamos todo tipo de software a medida: aplicaciones web y móviles, plataformas SaaS, APIs en la nube, automatización de procesos y agentes de IA autónomos.
         </p>
 
         {/* Simple Action CTAs */}
@@ -28,7 +28,7 @@ export function Hero() {
             href="#projects"
             className="inline-flex items-center gap-2 px-6 py-2.5 text-xs font-medium rounded-full bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
           >
-            <span>Explore Projects</span>
+            <span>Explorar Proyectos</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
           <a
@@ -37,7 +37,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-5 py-2.5 text-xs font-medium rounded-full border border-neutral-200 bg-white text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 transition-colors"
           >
-            <span>Nexus Bank Live</span>
+            <span>Nexus Bank en Vivo</span>
             <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400" />
           </a>
         </div>

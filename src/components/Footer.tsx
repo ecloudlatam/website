@@ -36,29 +36,29 @@ export function Footer() {
               Ecloudlab
             </Link>
             <p className="text-xs text-neutral-500 mt-1 max-w-sm">
-              Autonomous AI agents and experimental software laboratory.
+              Desarrollo de software a medida, sistemas en la nube y soluciones con IA autónoma.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-xs text-neutral-500">
             <Link href="#projects" className="hover:text-neutral-900 transition-colors">
-              Projects
+              Proyectos
             </Link>
             <Link href="/privacy" className="hover:text-neutral-900 transition-colors">
-              Privacy
+              Privacidad
             </Link>
             <Link href="/terms" className="hover:text-neutral-900 transition-colors">
-              Terms
+              Términos
             </Link>
             <button
               onClick={copyEmail}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-200 bg-gray-50 hover:border-neutral-400 text-xs font-mono text-neutral-700 transition-colors"
-              aria-label="Copy contact email"
+              aria-label="Copiar correo de contacto"
             >
               {copied ? (
                 <>
                   <Check className="w-3 h-3 text-emerald-600" />
-                  <span className="text-emerald-600">Copied!</span>
+                  <span className="text-emerald-600">¡Copiado!</span>
                 </>
               ) : (
                 <>
@@ -72,7 +72,7 @@ export function Footer() {
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
           <div>
-            © 2026 Ecloudlab. Founded by{" "}
+            © 2026 Ecloudlab. Fundado por{" "}
             <a
               href="https://www.brianpomaquero.com/"
               target="_blank"
@@ -86,7 +86,7 @@ export function Footer() {
 
           <div className="inline-flex items-center gap-1.5 text-neutral-500 font-mono text-[11px]">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-            <span>All Systems Operational</span>
+            <span>Todos los Sistemas Operativos</span>
           </div>
         </div>
       </div>
