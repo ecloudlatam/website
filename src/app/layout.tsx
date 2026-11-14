@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     template: "%s — Ecloudlab",
   },
   description:
-    "Ecloudlab es un estudio de desarrollo de software y laboratorio de IA liderado por Brian Pomaquero. Creamos todo tipo de soluciones de software a medida: aplicaciones web y móviles, plataformas SaaS, APIs en la nube, automatización de procesos y agentes de IA autónomos.",
+    "Ecloudlab es un estudio de desarrollo de software y laboratorio de IA liderado por Brian Pomaquero. Creamos todo tipo de soluciones de software a medida: aplicaciones web, plataformas SaaS, APIs en la nube, automatización de procesos y agentes de IA autónomos.",
   keywords: [
     "Ecloudlab",
     "Brian Pomaquero",
     "Desarrollador de Software",
     "Desarrollo de Software a Medida",
     "Soluciones de Software",
-    "Desarrollo Web y Móvil",
+    "Desarrollo Web",
     "Desarrollo SaaS",
     "Arquitectura Cloud",
     "Integración de APIs",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     url: "https://ecloudlab.com",
     title: "Ecloudlab — Desarrollo de Software a Medida y Soluciones con IA",
     description:
-      "Desarrollador full-stack creando todo tipo de soluciones de software: apps web y móviles, SaaS, APIs en la nube, automatización y agentes de IA autónomos.",
+      "Desarrollador full-stack creando todo tipo de soluciones de software: aplicaciones web, SaaS, APIs en la nube, automatización y agentes de IA autónomos.",
     siteName: "Ecloudlab",
     images: [
       {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ecloudlab — Desarrollo de Software a Medida y Soluciones con IA",
     description:
-      "Creamos todo tipo de soluciones de software: aplicaciones web y móviles, backends en la nube, automatización y agentes de IA autónomos.",
+      "Creamos todo tipo de soluciones de software: aplicaciones web, backends en la nube, automatización y agentes de IA autónomos.",
     images: ["/og-preview.svg"],
     creator: "@edwardrian",
   },
@@ -115,7 +115,7 @@ export default function RootLayout({
         url: "https://ecloudlab.com/",
         logo: "https://ecloudlab.com/favicon.svg",
         description:
-          "Estudio de ingeniería de software y laboratorio de IA enfocado en crear soluciones web, móviles, cloud, automatización y agentes autónomos.",
+          "Estudio de ingeniería de software y laboratorio de IA enfocado en crear soluciones web, cloud, automatización y agentes autónomos.",
         founder: {
           "@id": "https://ecloudlab.com/#person",
         },
@@ -148,9 +148,9 @@ export default function RootLayout({
               "@type": "Offer",
               itemOffered: {
                 "@type": "Service",
-                name: "Aplicaciones Web, Móviles y APIs",
+                name: "Aplicaciones Web y APIs",
                 description:
-                  "Aplicaciones full-stack, APIs REST/GraphQL, integraciones con terceros y software multiplataforma.",
+                  "Aplicaciones full-stack, APIs REST/GraphQL, integraciones con terceros y sistemas web a medida.",
               },
             },
             {
@@ -191,7 +191,6 @@ export default function RootLayout({
         knowsAbout: [
           "Desarrollo de Software a Medida",
           "Desarrollo Web Full-Stack",
-          "Desarrollo de Aplicaciones Móviles",
           "Arquitectura Cloud",
           "Diseño e Integración de APIs",
           "Ingeniería SaaS",

@@ -14,7 +14,7 @@ export function CreatorSpotlight() {
               Brian Pomaquero
             </h2>
             <p className="text-sm text-neutral-500 leading-relaxed mb-6">
-              Desarrollador de software full-stack y arquitecto de soluciones de IA que crea sistemas integrales para cualquier necesidad: desde plataformas web, aplicaciones móviles y SaaS escalables hasta APIs en la nube, automatización de procesos y agentes autónomos. A través de Ecloudlab, transforma ideas complejas en software sólido y listo para producción.
+              Desarrollador de software full-stack y arquitecto de soluciones de IA que crea sistemas integrales para cualquier necesidad: desde plataformas web, software a medida y SaaS escalables hasta APIs en la nube, automatización de procesos y agentes autónomos. A través de Ecloudlab, transforma ideas complejas en software sólido y listo para producción.
             </p>
 
             <div className="flex flex-wrap items-center gap-2.5">

@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Ecloudlab — Desarrollo de Software y Soluciones con IA",
     short_name: "Ecloudlab",
     description:
-      "Desarrollo de software a medida, aplicaciones web y móviles, arquitectura en la nube y soluciones autónomas con IA por Brian Pomaquero.",
+      "Desarrollo de software a medida, aplicaciones web, arquitectura en la nube y soluciones autónomas con IA por Brian Pomaquero.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

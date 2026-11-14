@@ -19,7 +19,7 @@ export function Hero() {
 
         {/* Concise Subtitle */}
         <p className="text-base sm:text-lg text-neutral-500 max-w-xl mx-auto mb-10 leading-relaxed">
-          Diseñamos y desarrollamos todo tipo de software a medida: aplicaciones web y móviles, plataformas SaaS, APIs en la nube, automatización de procesos y agentes de IA autónomos.
+          Diseñamos y desarrollamos todo tipo de software a medida: aplicaciones web, plataformas SaaS, APIs en la nube, automatización de procesos y agentes de IA autónomos.
         </p>
 
         {/* Simple Action CTAs */}

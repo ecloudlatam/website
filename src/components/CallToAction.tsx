@@ -9,7 +9,7 @@ export function CallToAction() {
           ¿Necesitas Software a Medida o una Solución con IA?
         </h2>
         <p className="text-sm sm:text-base text-neutral-500 max-w-lg mx-auto mb-8 leading-relaxed">
-          Ya sea una aplicación web o móvil, plataforma SaaS, integración de APIs, automatización o agentes de IA, construyámoslo juntos.
+          Ya sea una aplicación web, plataforma SaaS, integración de APIs, automatización o agentes de IA, construyámoslo juntos.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3">
